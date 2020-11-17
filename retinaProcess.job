@@ -1,0 +1,13 @@
+#!/bin/sh
+#$ -q JM
+#$ -pe smp 56
+#$ -e /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/data_prep/
+#$ -o /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/data_prep/
+
+echo hi
+# activate conda environment
+conda activate myenv
+
+echo here
+# job launching stuff
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/retina_processing.py
