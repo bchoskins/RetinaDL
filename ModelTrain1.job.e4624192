@@ -1,0 +1,47 @@
+Using TensorFlow backend.
+WARNING: Logging before flag parsing goes to stderr.
+W0923 12:09:46.807522 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0923 12:09:46.823282 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0923 12:09:46.830940 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+W0923 12:09:46.888639 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0923 12:09:46.891634 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:133: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+W0923 12:09:46.905317 47878321929920 deprecation.py:506] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3445: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0923 12:09:47.016155 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+W0923 12:09:47.035932 47878321929920 deprecation_wrapper.py:119] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/keras/backend/tensorflow_backend.py:3376: The name tf.log is deprecated. Please use tf.math.log instead.
+
+W0923 12:09:47.040444 47878321929920 deprecation.py:323] From /Users/bchoskins/miniconda3/envs/myenv/lib/python3.7/site-packages/tensorflow/python/ops/nn_impl.py:180: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2019-09-23 12:09:47.443589: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2019-09-23 12:09:47.450433: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2399770000 Hz
+2019-09-23 12:09:47.453452: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e5c3100980 executing computations on platform Host. Devices:
+2019-09-23 12:09:47.453475: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-09-23 12:09:47.459386: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcuda.so.1
+2019-09-23 12:09:47.464854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB major: 6 minor: 0 memoryClockRate(GHz): 1.3285
+pciBusID: 0000:81:00.0
+2019-09-23 12:09:47.961314: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2019-09-23 12:09:48.937478: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2019-09-23 12:09:49.506885: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10
+2019-09-23 12:09:50.275501: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10
+2019-09-23 12:09:51.194692: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10
+2019-09-23 12:09:51.751123: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10
+2019-09-23 12:09:52.714616: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2019-09-23 12:09:52.719658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2019-09-23 12:09:52.719774: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.1
+2019-09-23 12:09:53.118253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-09-23 12:09:53.118329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2019-09-23 12:09:53.118354: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2019-09-23 12:09:53.127201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15216 MB memory) -> physical GPU (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:81:00.0, compute capability: 6.0)
+2019-09-23 12:09:53.131401: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e5c3d5e2f0 executing computations on platform CUDA. Devices:
+2019-09-23 12:09:53.131443: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): Tesla P100-PCIE-16GB, Compute Capability 6.0
+2019-09-23 12:10:10.987180: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10
+2019-09-23 12:10:11.998845: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7

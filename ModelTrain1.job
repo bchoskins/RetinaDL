@@ -1,0 +1,13 @@
+#!/bin/sh
+#$ -q UI-GPU
+#$ -pe smp 56
+#$ -e /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/
+#$ -o /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/
+
+echo hi
+# activate conda environment
+conda activate myenv
+
+echo here
+# job launching stuff
+python /Dedicated/jmichaelson-wdata/rotating_students/bhoskins/RetinaDL/Retina_DL_Model1.py
